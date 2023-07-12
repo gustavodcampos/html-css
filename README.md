@@ -1,4 +1,4 @@
 # html-css
  curso de html e css
 
- modificando o redme
+ modificando o readme
