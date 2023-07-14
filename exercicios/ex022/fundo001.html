@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste img</title>
+    <style>
+body{
+    background-image: url('img/wallpaper002.jpg');
+    
+}
+       div#q1 h1{
+           display: inline-block;
+        }
+
+        div.quadrado{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            background-color: #ccc;
+            border-radius: 10px;
+        }
+
+        div#q1{
+            background-color: blueviolet;
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, blue, transparent);
+        }
+
+        div#q3{background-image: url('img/pattern004.png');
+        border-radius: 50%;
+
+        }
+
+        div#main{
+            border: 3px solid blue;
+            margin: auto;
+            width: 300px;
+            height: 285px;
+            background-image: linear-gradient(to bottom, yellow, rgb(207, 38, 38));
+            border-radius: 50%;
+        }
+
+        div#main > #q3{
+            
+            position: absolute;
+             
+            margin: 46px;      
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="quadrado" id="q1">
+        
+
+    </div>
+
+    <div class="quadrado" id="q2">
+
+    </div>
+    
+
+    </div>
+
+    <div id="main">
+        <div class="quadrado" id="q3">
+    </div>
+
+    
+</body>
+</html>
