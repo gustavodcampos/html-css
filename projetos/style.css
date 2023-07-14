@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+
+
+    *{
+        font-family: 'Roboto', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    #about-container {
+        flex: 1.6;
+        padding: 2rem 4rem;
+    }
+
+    #brand{
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    #brand img{
+        height: 90px;
+        margin-right: .6rem;
+    }
+
+    #exclusive{
+        text-transform: uppercase;
+        color: #0b0bec;
+        font-weight: bold;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    #about-container h2{
+        font-size: 2.4rem;
+        max-width: 500px;
+        margin-bottom: 1rem;
+    }
+
+    #date{
+        text-transform: uppercase;
+        color: #aaa;
+        margin-bottom: 1rem;
+    }
+
+    #description{
+        max-width: 500px;
+        margin-bottom: 1rem;
+        line-height: 1rem;
+
+    }
+
+    #about-container h4{
+        font-size: 1.4rem;
+        margin-bottom: 1.4rem;
+        
+    }
+
+    #users-container{
+       display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+    }
+
+    .user-card{
+        border: 2px solid #ccc;
+        padding: 1rem;
+        width: 180px;
+        text-align: center;
+    
+    }
+
+    .user-card img{
+        width: 120px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .user-card .user-name{
+        font-weight: bold;
+        margin-bottom: .6rem;
+    }
+
+    .user-card .user-role{
+        color: #aaa;
+        font-size: .9rem;
+
+    }
+
+
+    #form-container {
+        flex: 1;
+        background-image: url("./img/pattern.png");
+        background-size: cover;
+        color:#fff;
+         }
+
+         #form-inner{
+            margin: 3rem;
+            padding: 3rem;
+            border: 2px solid rgb(249, 255, 248);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+         #form-inner h3{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+         }
+
+         #form-inner p {
+            margin-bottom: 1rem;
+         }
+
+         #register-form{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+
+         }
+
+         #name-container{
+            display: flex;
+            gap: 0.5rem;
+         }
+
+         #register-form input{
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+         }
+
+         #email{
+            min-width: 100%;
+         }
+
+            #register-form input[type="submit"] {
+                background-color: transparent;
+                color: white;
+                font-size: 1.2em;
+                font-weight: bold;
+                border: 2px solid whitesmoke;
+                cursor: pointer;
+            }
+
+            #register-form input[type="submit"]:hover {
+                background-color: whitesmoke;
+                color: #0b0bec;
+                transition: 0.7s;
+            }
+
+            #benefits{
+                text-align: left;
+                align-self: start;
+            }
+
+            #benefits h4{
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+                
+            }
+
+            #benefits ul{
+                list-style-position: inside;
+                
+            }
+
+            #benefits li{
+                margin-bottom: 0.5rem;
+            }
+
+            #footer p{
+                position: relative;
+                top:50px;
+                font-size: 1.3rem;
+            }
+
+            #footer a{
+                text-decoration: none;
+                color: #ffffff;
+                background-color: #aaaaaa5d;
+                margin: 3px;
+                padding: 4px;
+                border-radius: 5px;
+            }
+
+            #footer a:hover{
+                background-color: #0300bb;
+                
+                position: relative;
+                
+                transition: 1.5s;
+            }
+
+            
+            
+
+            @media (
+                max-width:640px
+                
+        ) {
+                body{
+                    flex-direction: column;
+                    
+                }
+                #brand img{
+                    width: 85px;
+                    height: 85px;
+                }
+                #brand  h1{
+                    font-size: 3.2rem;
+                }
+
+                #about-container{
+                    padding: 2rem;
+                    padding-bottom: 0;
+                }
+                #about-container h2{
+                    font-size: 3rem;
+                }
+
+                #about-container h4{
+                    text-align: center;
+                    font-size: 2.5rem;
+                    box-shadow: 4px 4px 5px black;
+                    padding: 3px;
+                }
+
+                #exclusive,
+                #date {
+                    font-size: 1.4rem;
+                }
+
+                #description {
+                    font-size: 1.2rem;
+                    line-height: 2.2rem;
+                }
+
+                #users-container{
+                    flex-direction: column;
+
+                }
+
+                .user-card{
+                    width: 100%;
+                    padding: 2rem;
+                    background-image: linear-gradient(to bottom, black , rgb(95, 95, 253));
+                    box-shadow: 3px 9px 12px black;
+                }
+
+                .user-card img{
+                    width: 180px;
+                }
+
+                .user-card .user-name{
+                    font-size: 1.5rem;
+                    background-color: #00000036;
+                }
+
+                .user-card .user-role{
+                    font-size: 1.3rem;
+                }
+
+                #form-container{
+                    margin: 2rem;
+                    margin-top: -2rem;
+                }                
+
+                #register-form input{
+                    padding: 1rem;
+                    font-size: 1rem;
+                    background-color: rgba(12, 12, 12, 0.932);
+                }
+
+                #footer p{
+                    margin-top: 3rem;
+                    position: relative;
+                    top: 61px;
+                }
+
+            }
+
+                    
+       
+
+
