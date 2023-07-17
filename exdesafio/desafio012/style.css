@@ -63,38 +63,36 @@ section.normal{
     background-color: white;
 }
 
+.imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.74);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+
 section#imagem1{
     background-image: url('imagens/background001.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-     color: whitesmoke;
+    
+     
     
 }
 
 #imagem2{
     background-image: url('imagens/background002.jpg');
-    background-position: right bottom;
-    background-attachment: fixed;
 }
  
-    #imagem1 p {
-        background-image: linear-gradient(to right, rgba(54, 224, 54, 0.404), transparent);
-    }
-
-    #imagem2 p{
-        background-image: linear-gradient(to right, darkgray, transparent);
-    }
-
-    #imagem2 > p:hover{
-        color: black;
-    }
+    
    
+section > p{
+
+    padding-bottom: 3em;
+}
 
 section.imagem >p{
-    
+    background-color: rgba(0, 0, 0, 0.404);
     display: inline-block;
     padding: 7px;
-    color: rgb(255, 255, 255);
     border-radius: 5px;
     text-align: justify;
 }
@@ -105,43 +103,5 @@ footer{
     color: white;
     padding: 8px;
 }
-
-.normal .text1:hover{
-    position: relative;
-    
-    top: -5px;
-}
-
-.normal .text2:hover{
-    position: relative;
-    
-    top: -5px;
-}
-
-.normal .text3:hover{
-    position: relative;
-    
-    top: -5px;
-}
-
-.normal .text4:hover{
-    position: relative;
-    
-    top: -5px;
-}
-
-.normal .text5:hover{
-    position: relative;
-    
-    top: -5px;
-}
-
-.normal .text6:hover{
-    position: relative;
-    
-    top: -5px;
-}
-
-
 
 
