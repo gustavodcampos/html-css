@@ -68,12 +68,13 @@ section.normal{
     background-size: cover;
     background-attachment: fixed;
     color: white;
+
 }
 
 
 section#imagem1{
     background-image: url('imagens/background001.jpg');
-    
+    background-position: left center;   
      
     
 }
