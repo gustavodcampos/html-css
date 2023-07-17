@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+           width:  500px;
+           border-collapse: collapse;
+           
+        }
+        caption{
+            padding: 5px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        td , th{
+            border: 2px solid black;
+            padding: 8px;
+        }
+        thead, tfoot{
+            background-color: rgba(0, 0, 0, 0.705);
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: gray;
+
+        }
+
+        .num{
+            text-align: right;
+        }
+        .total{
+            text-align: right;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA DE TABELAS GRANDES
+        CAPTION
+        TABLE
+            THEAD 
+             TR, TD, TH
+            TBODY
+             TR, TD, TH
+            TFOOT
+             TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidade federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</td>
+                <th scope="col" style="width: 50px;">População</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">44 420 459	</td>
+            </tr>
+            <tr>
+                <td> Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <th scope="row">População total</th>
+            <strong>
+                <td class="total">106.593.326</td>
+            </strong>
+        </tfoot>
+
+
+    </table>
+    
+    
+</body>
+</html>
